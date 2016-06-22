@@ -12,6 +12,12 @@ or
 
 python plot-words.py
 ```
+# Examples
+![blitzkraft](imgs/blitzkraft.png)
+![malayalam](imgs/malayalam.png)
+![coffee](imgs/coffee.png)
+![mississippi](imgs/mississippi.png)
+![necessary](imgs/necessary.png)
 
 # Requirements
 
