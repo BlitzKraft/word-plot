@@ -1,5 +1,4 @@
 #! /usr/bin/python
-import numpy as np
 import matplotlib.pyplot as plt
 import os
 
@@ -15,7 +14,7 @@ for word in content:
     vals = []
     for c in objs:
         vals.append(ord(c) - ord('a') + 1)
-    y_pos = np.arange(len(vals))
+    y_pos = xrange(len(vals))
     plt.plot(y_pos, vals, alpha = 1)
     plt.xticks(y_pos, objs)
     plt.axis([-1,len(word),0, 26])
