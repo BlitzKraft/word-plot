@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 content = []
+
 with open('wordlist') as f:
     content = f.read().splitlines()
 for word in content:
@@ -11,8 +12,13 @@ for word in content:
     for c in objs:
         vals.append(ord(c) - ord('a') + 1)
     y_pos = np.arange(len(vals))
-    plt.plot(y_pos, vals, alpha = 0.5)
+    plt.plot(y_pos, vals, alpha = 1)
     plt.xticks(y_pos, objs)
     plt.axis([-1,len(word),0, 26])
-    plt.show()
+    name = word + '.png'
+    plt.savefig('imgs/'+name)
+    plt.clf()
+#    plt.show()
+
+print "TADA!!"
 
